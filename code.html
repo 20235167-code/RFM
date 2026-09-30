@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-secondary-fixed":"#002113","inverse-surface":"#dae2fd","on-background":"#dae2fd","on-secondary-container":"#00311f","primary-fixed":"#e1e0ff","on-tertiary-container":"#3e2400","inverse-primary":"#494bd6","tertiary":"#ffb95f","surface-container-high":"#222a3d","surface":"#0b1326","on-secondary":"#003824","surface-tint":"#c0c1ff","tertiary-fixed-dim":"#ffb95f","surface-container":"#171f33","on-primary-fixed-variant":"#2f2ebe","surface-container-lowest":"#060e20","surface-container-low":"#131b2e","surface-dim":"#0b1326","tertiary-fixed":"#ffddb8","on-primary":"#1000a9","surface-container-highest":"#2d3449","on-surface":"#dae2fd","error":"#ffb4ab","tertiary-container":"#ca8100","background":"#0b1326","on-tertiary-fixed":"#2a1700","on-secondary-fixed-variant":"#005236","on-tertiary-fixed-variant":"#653e00","on-tertiary":"#472a00","on-primary-fixed":"#07006c","on-primary-container":"#0d0096","surface-variant":"#2d3449","secondary-fixed":"#6ffbbe","primary":"#c0c1ff","surface-bright":"#31394d","secondary-fixed-dim":"#4edea3","secondary-container":"#00a572","primary-container":"#8083ff","outline-variant":"#464554","on-surface-variant":"#c7c4d7","primary-fixed-dim":"#c0c1ff","secondary":"#4edea3","on-error-container":"#ffdad6","inverse-on-surface":"#283044","error-container":"#93000a","on-error":"#690005","outline":"#908fa0"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"margin-md":"1.5rem","gutter-lg":"1.5rem","space-xs":"0.25rem","space-xl":"2rem","space-sm":"0.5rem","gutter":"1rem","margin-lg":"2rem","space-md":"1rem","space-lg":"1.5rem","margin":"1rem"},fontFamily:{"body-lg":["Inter"],"metric-value":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"code-sm":["Inter"],"body-md":["Inter"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"metric-value-mobile":["Plus Jakarta Sans"],"title-md":["Inter"],"label-md":["Inter"]},fontSize:{"body-lg":["15px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"metric-value":["32px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"display-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"code-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"500"}],"body-md":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}],"display-lg-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.015em","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"600"}],"metric-value-mobile":["24px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"700"}],"title-md":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.01em","fontWeight":"500"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex flex-col"><div class="h-20 px-space-md flex items-center gap-space-sm"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md text-headline-md">R</div><div class="flex flex-col"><span class="font-title-md text-title-md text-on-surface tracking-tight leading-none">RFM Studio</span><span class="font-code-sm text-code-sm text-on-surface-variant uppercase tracking-wider mt-space-xs">Engine v2.4</span></div></div><div class="px-space-md py-space-xs"><div class="px-space-sm py-space-xs rounded bg-surface-container-low flex items-center justify-between"><span class="font-code-sm text-code-sm text-on-surface-variant">MODEL STATUS</span><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-md text-label-md text-secondary">Active Sync</span></div></div></div><nav class="flex flex-col gap-space-xs px-space-sm mt-space-md" data-active-classes="bg-surface-container-high text-primary font-title-md rounded-lg shadow-[0_0_12px_rgba(99,102,241,0.15)]"><span class="font-code-sm text-code-sm text-outline px-space-sm mb-space-xs uppercase tracking-wider">Analytical Views</span><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="overview-and-metrics" href="#"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-body-md text-body-md">Overview &amp; Metrics</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="rfm-segmentation-matrix" href="#"><span class="material-symbols-outlined text-[20px]">scatter_plot</span><span class="font-body-md text-body-md">RFM Matrix (5x5)</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="customer-cohorts" href="#"><span class="material-symbols-outlined text-[20px]">groups</span><span class="font-body-md text-body-md">Customer Cohorts</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="monetary-velocity" href="#"><span class="material-symbols-outlined text-[20px]">payments</span><span class="font-body-md text-body-md">Monetary Velocity</span></a><span class="font-code-sm text-code-sm text-outline px-space-sm mt-space-md mb-space-xs uppercase tracking-wider">Intelligence &amp; Config</span><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="scoring-parameters" href="#"><span class="material-symbols-outlined text-[20px]">tune</span><span class="font-body-md text-body-md">Scoring Parameters</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="churn-risk-monitor" href="#"><span class="material-symbols-outlined text-[20px]">warning</span><span class="font-body-md text-body-md">Churn Risk Monitor</span></a></nav></div><div class="p-space-md"><div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between"><span class="font-code-sm text-code-sm text-on-surface-variant">DATASET</span><span class="font-code-sm text-code-sm text-secondary bg-surface-container px-space-xs rounded">retail_sales</span></div><div class="flex items-center justify-between text-on-surface-variant font-label-md text-label-md"><span>Cluster Health</span><span class="text-secondary font-code-sm text-code-sm">99.8%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-secondary h-1 rounded-full w-[99.8%]"></div></div></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface/85 backdrop-blur-xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.3)]"><div class="w-full h-full px-space-lg flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex flex-col"><h1 class="font-title-md text-title-md text-on-surface tracking-tight">RFM Studio | Customer Segmentation &amp; Analytics</h1><div class="flex items-center gap-space-sm text-on-surface-variant font-code-sm text-code-sm mt-space-xs"><span class="flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Engine Online</span><span class="text-outline">|</span><span>Cluster: Production-EU</span><span class="text-outline">|</span><span>Calculated: Just now</span></div></div></div><div class="flex items-center gap-space-sm"><button class="h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-secondary">upload_file</span><span>Cargar Demo Dataset retail_sales_dataset.csv</span></button><button class="h-9 px-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-tertiary">menu_book</span><span>Documentación del Algoritmo</span></button><button class="h-9 px-space-sm rounded-lg bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-label-md text-label-md flex items-center gap-space-xs transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">download</span><span>Exportar Resultados</span></button><div class="h-6 w-[1px] bg-surface-container-highest mx-space-xs"></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><div class="fixed top-20 left-64 right-0 h-14 bg-surface-container-low/95 backdrop-blur-md z-30 shadow-[0_1px_4px_rgba(0,0,0,0.2)]"><div class="w-full h-full px-space-lg flex items-center justify-between"><div class="flex items-center gap-space-xl"><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-on-surface-variant">ACTIVE CUSTOMERS:</span><span class="font-title-md text-title-md text-on-surface">142,850</span><span class="font-code-sm text-code-sm text-secondary bg-surface-container-highest px-1 rounded">+4.2%</span></div><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-on-surface-variant">CHAMPIONS (R5-F5-M5):</span><span class="font-title-md text-title-md text-secondary">18,420</span><span class="font-code-sm text-code-sm text-secondary-container text-on-secondary-container px-1 rounded">12.9%</span></div><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-on-surface-variant">AT RISK:</span><span class="font-title-md text-title-md text-tertiary">24,110</span><span class="font-code-sm text-code-sm text-tertiary bg-surface-container-highest px-1 rounded">16.8%</span></div><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-on-surface-variant">AVG MONETARY VALUE:</span><span class="font-title-md text-title-md text-on-surface">$482.30</span></div><div class="flex items-center gap-space-xs"><span class="font-code-sm text-code-sm text-on-surface-variant">RECENCY MEDIAN:</span><span class="font-title-md text-title-md text-on-surface">14d</span></div></div><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-code-sm text-code-sm text-on-surface-variant">Auto-refresh: 5m</span></div></div></div><main class="relative pt-34 bg-background min-h-screen px-space-lg pb-space-xl"><div class="flex flex-col w-full gap-space-lg">
+<!-- TOP STATS & QUICK ENGINE TELEMETRY OVERLAY -->
+<div class="grid grid-cols-12 gap-gutter-lg items-stretch">
+<!-- Dataset Status & Upload Pipeline -->
+<div class="col-span-12 xl:col-span-8 bg-surface-container rounded-xl p-space-lg shadow-xl relative overflow-hidden flex flex-col justify-between">
+<div class="absolute -right-16 -top-16 w-64 h-64 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md z-10">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded tracking-wide font-medium">PIPELINE ACTIVO</span>
+<span class="text-outline text-body-md font-body-md">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Retail Transactional Corpus v2.1</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Segmentación RFM Multidimensional</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+            Procesamiento determinista de transacciones retail. Agrupación por Recency (días transcurridos), Frequency (volumen transaccional) y Monetary (LTV acumulado) mediante quintiles dinámicos normalizados.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs self-start lg:self-center shrink-0">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-secondary font-label-md text-label-md flex items-center gap-2 shadow-sm transition-all duration-200" id="btn-load-demo" type="button">
+<span class="material-symbols-outlined text-[18px]">cloud_sync</span>
+<span>Cargar retail_sales_dataset.csv</span>
+</button>
+<button class="px-space-md py-2.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary hover:text-on-primary-container font-label-md text-label-md flex items-center gap-2 shadow-md transition-all duration-200" id="btn-toggle-code" type="button">
+<span class="material-symbols-outlined text-[18px]">terminal</span>
+<span>Ver Pipeline Python</span>
+</button>
+</div>
+</div>
+<!-- Drag & Drop Quick Area + Metadata Mapping Banner -->
+<div class="mt-space-md pt-space-md grid grid-cols-1 md:grid-cols-3 gap-space-md z-10">
+<div class="col-span-1 md:col-span-2 bg-surface-container-lowest/80 hover:bg-surface-container-low transition-colors rounded-lg p-space-md flex items-center gap-space-md cursor-pointer group" id="dropzone">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[26px]">upload_file</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-title-md text-title-md text-on-surface">Subir Dataset Custom</span>
+<span class="font-code-sm text-code-sm text-on-surface-variant bg-surface-container px-1.5 py-0.5 rounded">.CSV / .XLSX</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant truncate">Arrastra tu archivo con Customer ID, Date y Total Amount</span>
+</div>
+<input accept=".csv,.xlsx" class="hidden" id="file-input" type="file"/>
+</div>
+<div class="bg-surface-container-lowest/80 rounded-lg p-space-md flex flex-col justify-center">
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm mb-1">
+<span>MAPEO AUTO-DETECTADO</span>
+<span class="text-secondary flex items-center gap-1"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>OK (3/3)</span>
+</div>
+<div class="font-label-md text-label-md text-on-surface flex flex-col gap-0.5">
+<span class="truncate"><span class="text-outline">ID:</span> Customer ID</span>
+<span class="truncate"><span class="text-outline">Fecha:</span> Date (YYYY-MM-DD)</span>
+<span class="truncate"><span class="text-outline">Monto:</span> Total Amount (USD)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Engine Control Panel & Hyperparameters -->
+<div class="col-span-12 xl:col-span-4 bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+<h3 class="font-title-md text-title-md text-on-surface">Configuración Algorítmica</h3>
+</div>
+<span class="font-code-sm text-code-sm text-secondary bg-surface-container-high px-2 py-0.5 rounded">Q-CUT (1-5)</span>
+</div>
+<div class="space-y-space-sm">
+<div>
+<label class="block font-code-sm text-code-sm text-on-surface-variant mb-1 uppercase">Fecha de Corte (Reference Date)</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface px-space-sm py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="ref-date-input" type="date" value="2024-01-01"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px] pointer-events-none">calendar_today</span>
+</div>
+<span class="font-code-sm text-code-sm text-outline mt-0.5 block">Por defecto: Max Date + 1 día del dataset</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div>
+<label class="block font-code-sm text-code-sm text-on-surface-variant mb-1 uppercase">Partición RFM</label>
+<select class="w-full bg-surface-container-lowest text-on-surface px-space-sm py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option selected="" value="quantiles">Quintiles (20% c/u)</option>
+<option value="custom">Umbrales Fijos</option>
+<option value="kmeans">K-Means Clustered</option>
+</select>
+</div>
+<div>
+<label class="block font-code-sm text-code-sm text-on-surface-variant mb-1 uppercase">Recency Ranking</label>
+<select class="w-full bg-surface-container-lowest text-on-surface px-space-sm py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary">
+<option selected="" value="inverted">Invertido (5 = Reciente)</option>
+<option value="linear">Lineal (1 = Reciente)</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">speed</span>
+          Tiempo ejecución: 12ms
+        </span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 shadow-sm transition-colors" id="btn-recompute">
+<span class="material-symbols-outlined text-[16px]">refresh</span>
+          Recalcular
+        </button>
+</div>
+</div>
+</div>
+<!-- 4 HIGH-IMPACT KPI METRIC CARDS -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter-lg">
+<!-- Total Customers -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">TOTAL CLIENTES ÚNICOS</span>
+<span class="px-2 py-0.5 rounded text-secondary bg-surface-container-lowest font-code-sm text-code-sm font-semibold">COHORTE 100%</span>
+</div>
+<div class="my-space-sm flex items-baseline justify-between">
+<span class="font-metric-value text-metric-value text-on-surface tracking-tight" id="kpi-customers">1,000</span>
+<span class="text-secondary font-label-md text-label-md flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">trending_up</span> +12.4%
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Filtro: Clientes verificados</span>
+<span class="text-outline">N=1,000 registros</span>
+</div>
+</div>
+<!-- Total Revenue -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">FACTURACIÓN BRUTA TOTAL</span>
+<span class="px-2 py-0.5 rounded text-primary bg-surface-container-lowest font-code-sm text-code-sm font-semibold">MONETARY (M)</span>
+</div>
+<div class="my-space-sm flex items-baseline justify-between">
+<span class="font-metric-value text-metric-value text-on-surface tracking-tight" id="kpi-revenue">$451,448</span>
+<span class="text-secondary font-label-md text-label-md flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">north_east</span> +8.9%
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Ticket Promedio: $178.60</span>
+<span class="text-outline">Moneda: USD</span>
+</div>
+</div>
+<!-- Average Frequency -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">FRECUENCIA PROMEDIO</span>
+<span class="px-2 py-0.5 rounded text-tertiary bg-surface-container-lowest font-code-sm text-code-sm font-semibold">FREQUENCY (F)</span>
+</div>
+<div class="my-space-sm flex items-baseline justify-between">
+<span class="font-metric-value text-metric-value text-on-surface tracking-tight" id="kpi-frequency">3.42 <span class="font-headline-md text-headline-md text-on-surface-variant">txs</span></span>
+<span class="text-tertiary font-label-md text-label-md flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">horizontal_rule</span> Estable
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Rango: 1 - 12 órdenes</span>
+<span class="text-outline">Mediana: 3.0</span>
+</div>
+</div>
+<!-- Recency Median -->
+<div class="bg-surface-container rounded-xl p-space-md shadow-md flex flex-col justify-between hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface-variant">RECENCIA PROMEDIO</span>
+<span class="px-2 py-0.5 rounded text-secondary-fixed-dim bg-surface-container-lowest font-code-sm text-code-sm font-semibold">RECENCY (R)</span>
+</div>
+<div class="my-space-sm flex items-baseline justify-between">
+<span class="font-metric-value text-metric-value text-on-surface tracking-tight" id="kpi-recency">41.8 <span class="font-headline-md text-headline-md text-on-surface-variant">días</span></span>
+<span class="text-secondary font-label-md text-label-md flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">south</span> -4.1 días
+        </span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm">
+<span>Tiempo desde última compra</span>
+<span class="text-outline">Max: 180d</span>
+</div>
+</div>
+</div>
+<!-- COLLAPSIBLE PYTHON DATA SCIENCE SCRIPT DRAWER -->
+<div class="hidden bg-surface-container-lowest rounded-xl p-space-lg shadow-2xl transition-all duration-300" id="code-drawer">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-7 h-7 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-code-sm text-code-sm font-bold">Py</div>
+<div>
+<span class="font-title-md text-title-md text-on-surface">Algoritmo Python / Pandas (Google Colab Ready)</span>
+<p class="font-code-sm text-code-sm text-on-surface-variant">Copia directa del pipeline utilizado para la vectorización y asignación de puntajes</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface hover:text-secondary font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="btn-copy-code">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+<span id="copy-text">Copiar Código</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-surface-container text-on-surface-variant hover:text-on-surface flex items-center justify-center" id="btn-close-code">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<pre class="bg-surface-container-low p-space-md rounded-lg font-code-sm text-code-sm text-on-surface overflow-x-auto selection:bg-primary-container"><code id="python-snippet">import pandas as pd
+import datetime as dt
+
+# 1. Cargar archivo retail
+df = pd.read_csv('retail_sales_dataset.csv', parse_dates=['Date'])
+
+# 2. Configurar fecha de análisis
+reference_date = df['Date'].max() + dt.timedelta(days=1)
+
+# 3. Agrupación por Cliente (RFM Aggregations)
+rfm = df.groupby('Customer ID').agg({
+    'Date': lambda x: (reference_date - x.max()).days, # Recency
+    'Transaction ID': 'count',                         # Frequency
+    'Total Amount': 'sum'                              # Monetary
+}).reset_index()
+
+rfm.rename(columns={'Date': 'Recency', 'Transaction ID': 'Frequency', 'Total Amount': 'Monetary'}, inplace=True)
+
+# 4. Cálculo de Quintiles 1 a 5 (qcut)
+# Para Recency: menor valor en días es mejor score (5)
+rfm['R_Score'] = pd.qcut(rfm['Recency'], 5, labels=[5, 4, 3, 2, 1])
+rfm['F_Score'] = pd.qcut(rfm['Frequency'].rank(method='first'), 5, labels=[1, 2, 3, 4, 5])
+rfm['M_Score'] = pd.qcut(rfm['Monetary'], 5, labels=[1, 2, 3, 4, 5])
+
+rfm['RFM_Group'] = rfm['R_Score'].astype(str) + rfm['F_Score'].astype(str) + rfm['M_Score'].astype(str)
+rfm['RFM_Score'] = rfm[['R_Score', 'F_Score', 'M_Score']].sum(axis=1)
+
+# 5. Mapeo Semántico de Segmentos de Negocio
+def assign_segment(row):
+    r, f = int(row['R_Score']), int(row['F_Score'])
+    if r &gt;= 4 and f &gt;= 4:
+        return 'Champions (VIP)'
+    elif r &gt;= 3 and f &gt;= 3:
+        return 'Leales &amp; Frecuentes'
+    elif r &gt;= 4 and f &lt;= 2:
+        return 'Nuevos Prometedores'
+    elif r == 3 and f &lt;= 2:
+        return 'Clientes Potenciales'
+    elif r == 2 and f &gt;= 3:
+        return 'En Riesgo de Churn'
+    elif r &lt;= 2 and f &lt;= 2:
+        return 'Hibernando / Perdidos'
+    else:
+        return 'Requieren Atención'
+
+rfm['Segment'] = rfm.apply(assign_segment, axis=1)
+print(rfm.head())</code></pre>
+</div>
+<!-- INTERACTIVE RFM 5x5 MATRIX & STRATEGY INSPECTOR -->
+<div class="grid grid-cols-12 gap-gutter-lg items-start">
+<!-- 5x5 Matrix Card -->
+<div class="col-span-12 xl:col-span-8 bg-surface-container rounded-xl p-space-lg shadow-xl">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-space-md gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">grid_4x4</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Matriz RFM Bidimensional (5x5)</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Distribución cruzada de <span class="text-on-surface font-semibold">Frecuencia (Y)</span> vs <span class="text-on-surface font-semibold">Recencia (X)</span>. Haz click en cualquier celda para filtrar la tabla de clientes.
+          </p>
+</div>
+<!-- Metric Switcher in Heatmap -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg self-start">
+<button class="px-2.5 py-1 rounded font-label-md text-label-md bg-surface-container-high text-secondary shadow-sm" id="view-mode-count">Clientes (N)</button>
+<button class="px-2.5 py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-on-surface" id="view-mode-revenue">Facturación ($)</button>
+</div>
+</div>
+<!-- Matrix Canvas Wrapper -->
+<div class="relative overflow-x-auto pb-space-xs">
+<div class="min-w-[620px]">
+<!-- Top X-Axis Label -->
+<div class="text-center font-code-sm text-code-sm text-primary tracking-widest uppercase mb-space-xs font-semibold">
+            ← Menor Recencia (Días lejanos) — RECENCY SCORE (1 a 5) — Mayor Recencia (Reciente) →
+          </div>
+<div class="flex items-stretch gap-space-sm">
+<!-- Left Y-Axis Label -->
+<div class="flex flex-col justify-center items-center w-6 text-tertiary font-code-sm text-code-sm font-semibold [writing-mode:vertical-rl] rotate-180 tracking-widest uppercase">
+              ← FREQUENCY SCORE (1 a 5) →
+            </div>
+<!-- Heatmap 5x5 Grid -->
+<div class="flex-1 grid grid-cols-5 gap-2">
+<!-- Headers Recency -->
+<div class="text-center font-code-sm text-code-sm text-on-surface-variant py-1">R1 (Inactivo)</div>
+<div class="text-center font-code-sm text-code-sm text-on-surface-variant py-1">R2 (Alerta)</div>
+<div class="text-center font-code-sm text-code-sm text-on-surface-variant py-1">R3 (Medio)</div>
+<div class="text-center font-code-sm text-code-sm text-on-surface-variant py-1">R4 (Activo)</div>
+<div class="text-center font-code-sm text-code-sm text-secondary font-semibold py-1">R5 (Muy Reciente)</div>
+<!-- ROW 5 (Frequency = 5) -->
+<div class="matrix-cell rounded-lg p-2.5 bg-error-container/40 hover:bg-error-container/70 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="5" data-r="1" data-segment="En Riesgo Crítico">
+<span class="font-code-sm text-code-sm text-error">R1-F5</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">28</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$14.2k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-tertiary-container/30 hover:bg-tertiary-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="5" data-r="2" data-segment="En Riesgo">
+<span class="font-code-sm text-code-sm text-tertiary">R2-F5</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">36</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$18.9k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/30 hover:bg-primary-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="5" data-r="3" data-segment="Leales Frecuentes">
+<span class="font-code-sm text-code-sm text-primary">R3-F5</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">54</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$29.1k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-secondary-container/30 hover:bg-secondary-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="5" data-r="4" data-segment="Champions (VIP)">
+<span class="font-code-sm text-code-sm text-secondary">R4-F5</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">62</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$34.8k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-secondary-container/60 hover:bg-secondary-container/90 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20 shadow-[0_0_12px_rgba(78,222,163,0.2)] ring-1 ring-secondary/50" data-f="5" data-r="5" data-segment="Champions (VIP)">
+<span class="font-code-sm text-code-sm text-secondary font-bold">R5-F5 ⭐</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface font-bold cell-value">84</div>
+<span class="font-code-sm text-code-sm text-secondary font-semibold cell-sub">$49.5k</span>
+</div>
+</div>
+<!-- ROW 4 (Frequency = 4) -->
+<div class="matrix-cell rounded-lg p-2.5 bg-error-container/30 hover:bg-error-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="4" data-r="1" data-segment="Hibernando">
+<span class="font-code-sm text-code-sm text-error">R1-F4</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">31</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$12.9k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-tertiary-container/30 hover:bg-tertiary-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="4" data-r="2" data-segment="En Riesgo">
+<span class="font-code-sm text-code-sm text-tertiary">R2-F4</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">42</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$19.4k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/20 hover:bg-primary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="4" data-r="3" data-segment="Leales Frecuentes">
+<span class="font-code-sm text-code-sm text-primary">R3-F4</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">49</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$22.0k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-secondary-container/25 hover:bg-secondary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="4" data-r="4" data-segment="Champions (VIP)">
+<span class="font-code-sm text-code-sm text-secondary">R4-F4</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">58</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$27.6k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-secondary-container/40 hover:bg-secondary-container/70 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="4" data-r="5" data-segment="Champions (VIP)">
+<span class="font-code-sm text-code-sm text-secondary">R5-F4</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">66</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$31.2k</span>
+</div>
+</div>
+<!-- ROW 3 (Frequency = 3) -->
+<div class="matrix-cell rounded-lg p-2.5 bg-surface-container-high hover:bg-surface-bright cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="3" data-r="1" data-segment="Hibernando">
+<span class="font-code-sm text-code-sm text-on-surface-variant">R1-F3</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">39</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$11.8k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-tertiary-container/20 hover:bg-tertiary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="3" data-r="2" data-segment="Requieren Atención">
+<span class="font-code-sm text-code-sm text-tertiary">R2-F3</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">44</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$15.2k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/20 hover:bg-primary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="3" data-r="3" data-segment="Clientes Potenciales">
+<span class="font-code-sm text-code-sm text-primary">R3-F3</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">46</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$17.1k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/20 hover:bg-primary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="3" data-r="4" data-segment="Leales">
+<span class="font-code-sm text-code-sm text-primary">R4-F3</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">52</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$20.8k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-secondary-container/20 hover:bg-secondary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="3" data-r="5" data-segment="Leales">
+<span class="font-code-sm text-code-sm text-secondary">R5-F3</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">48</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$19.8k</span>
+</div>
+</div>
+<!-- ROW 2 (Frequency = 2) -->
+<div class="matrix-cell rounded-lg p-2.5 bg-error-container/20 hover:bg-error-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="2" data-r="1" data-segment="Perdidos">
+<span class="font-code-sm text-code-sm text-error">R1-F2</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">45</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$10.2k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-surface-container-high hover:bg-surface-bright cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="2" data-r="2" data-segment="Hibernando">
+<span class="font-code-sm text-code-sm text-on-surface-variant">R2-F2</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">41</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$11.4k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-surface-container-high hover:bg-surface-bright cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="2" data-r="3" data-segment="Requieren Atención">
+<span class="font-code-sm text-code-sm text-on-surface-variant">R3-F2</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">38</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$12.6k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/15 hover:bg-primary-container/40 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="2" data-r="4" data-segment="Prometedores">
+<span class="font-code-sm text-code-sm text-primary">R4-F2</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">43</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$14.5k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/25 hover:bg-primary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="2" data-r="5" data-segment="Nuevos Clientes">
+<span class="font-code-sm text-code-sm text-primary">R5-F2</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">47</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$16.1k</span>
+</div>
+</div>
+<!-- ROW 1 (Frequency = 1) -->
+<div class="matrix-cell rounded-lg p-2.5 bg-error-container/30 hover:bg-error-container/60 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="1" data-r="1" data-segment="Perdidos / Churn">
+<span class="font-code-sm text-code-sm text-error">R1-F1</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">58</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$8.4k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-error-container/15 hover:bg-error-container/45 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="1" data-r="2" data-segment="Perdidos">
+<span class="font-code-sm text-code-sm text-error">R2-F1</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">37</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$7.9k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-surface-container-high hover:bg-surface-bright cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="1" data-r="3" data-segment="Ocasionales">
+<span class="font-code-sm text-code-sm text-on-surface-variant">R3-F1</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">32</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$8.1k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/20 hover:bg-primary-container/50 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="1" data-r="4" data-segment="Nuevos Clientes">
+<span class="font-code-sm text-code-sm text-primary">R4-F1</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">39</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$11.2k</span>
+</div>
+</div>
+<div class="matrix-cell rounded-lg p-2.5 bg-primary-container/40 hover:bg-primary-container/70 cursor-pointer transition-all duration-150 flex flex-col justify-between h-20" data-f="1" data-r="5" data-segment="Nuevos Clientes">
+<span class="font-code-sm text-code-sm text-primary">R5-F1</span>
+<div class="text-right">
+<div class="font-title-md text-title-md text-on-surface cell-value">45</div>
+<span class="font-code-sm text-code-sm text-on-surface-variant cell-sub">$14.3k</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Legend Ribbon -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<span class="font-code-sm text-code-sm text-outline uppercase font-semibold">Segmentos:</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>Champions VIP</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span>Clientes Leales</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>En Riesgo</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-surface-bright"></span>Hibernando</span>
+<span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-error"></span>Perdidos / Churn</span>
+</div>
+</div>
+<!-- Active Segment Diagnostics & Strategic Playbook -->
+<div class="col-span-12 xl:col-span-4 bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col justify-between min-h-[460px]">
+<div>
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-code-sm text-code-sm text-secondary uppercase tracking-wider font-semibold">DIAGNÓSTICO EN TIEMPO REAL</span>
+<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-secondary-container/40 text-secondary" id="target-rfm-chip">CELDA: R5-F5</span>
+</div>
+<div class="mt-2">
+<h4 class="font-headline-md text-headline-md text-on-surface" id="target-segment-name">Champions (VIP Customers)</h4>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1" id="target-segment-desc">
+            Compraron muy recientemente, compran de manera recurrente y tienen el mayor valor monetario total del retail dataset.
+          </p>
+</div>
+<!-- Metric pill cards for selected cluster -->
+<div class="grid grid-cols-3 gap-space-xs my-space-md">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Volumen</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="target-cell-count">84 Clientes</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">% Total Base</span>
+<span class="font-title-md text-title-md text-secondary font-bold" id="target-cell-pct">8.4%</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Facturación</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="target-cell-rev">$49,520</span>
+</div>
+</div>
+<!-- Strategy Box -->
+<div class="bg-surface-container-lowest/80 rounded-lg p-space-md">
+<div class="flex items-center gap-1.5 text-secondary font-title-md text-title-md mb-1">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Estrategia de Activación Recomendada</span>
+</div>
+<ul class="font-label-md text-label-md text-on-surface space-y-1.5" id="target-segment-actions">
+<li class="flex items-start gap-1.5"><span class="text-secondary">•</span> Programa VIP de fidelización y acceso temprano a nuevos lanzamientos.</li>
+<li class="flex items-start gap-1.5"><span class="text-secondary">•</span> Ofertas de cross-selling prémium (Categoría Belleza &amp; Electrónica).</li>
+<li class="flex items-start gap-1.5"><span class="text-secondary">•</span> NO bombardear con descuentos agresivos; premiar estatus y exclusividad.</li>
+</ul>
+</div>
+</div>
+<div class="pt-space-md flex items-center justify-between">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Prioridad: <span class="text-secondary font-bold">Máxima</span></span>
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5" id="btn-filter-table">
+<span>Ver Clientes del Segmento</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- SEGMENT DISTRIBUTION & COHORT BREAKDOWN TABLE -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">pie_chart</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Distribución Consolidada por Cohortes RFM</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Desglose porcentual de clientes vs aporte neto al Monetary Total acumulado ($451,448 USD)</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-code-sm text-code-sm text-on-surface-variant">Exportar Análisis:</span>
+<button class="px-space-sm py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1" id="btn-export-cohorts">
+<span class="material-symbols-outlined text-[16px]">table_view</span> CSV
+        </button>
+</div>
+</div>
+<!-- Segment Proportional Multi-Bar -->
+<div class="w-full bg-surface-container-lowest rounded-lg p-space-xs flex flex-col gap-1.5 shadow-inner">
+<div class="h-5 w-full rounded flex overflow-hidden">
+<div class="h-full bg-secondary" style="width: 27%;" title="Champions (27.0%)"></div>
+<div class="h-full bg-primary" style="width: 20.3%;" title="Leales (20.3%)"></div>
+<div class="h-full bg-secondary-fixed-dim" style="width: 16.5%;" title="Potenciales (16.5%)"></div>
+<div class="h-full bg-primary-container" style="width: 13.1%;" title="Nuevos Clientes (13.1%)"></div>
+<div class="h-full bg-tertiary" style="width: 12.2%;" title="En Riesgo (12.2%)"></div>
+<div class="h-full bg-error" style="width: 10.9%;" title="Churn / Perdidos (10.9%)"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-code-sm text-code-sm px-1">
+<span>Champions 27.0%</span>
+<span>Leales 20.3%</span>
+<span>Potenciales 16.5%</span>
+<span>Nuevos 13.1%</span>
+<span>En Riesgo 12.2%</span>
+<span>Churn 10.9%</span>
+</div>
+</div>
+<!-- Aggregate Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="text-on-surface-variant font-code-sm text-code-sm uppercase bg-surface-container-lowest">
+<th class="py-2.5 px-space-md rounded-l-lg">Segmento</th>
+<th class="py-2.5 px-space-md text-right">Clientes</th>
+<th class="py-2.5 px-space-md text-right">% Base</th>
+<th class="py-2.5 px-space-md text-right">Facturación</th>
+<th class="py-2.5 px-space-md text-right">% Facturación</th>
+<th class="py-2.5 px-space-md text-right">R Medio</th>
+<th class="py-2.5 px-space-md text-right">F Medio</th>
+<th class="py-2.5 px-space-md text-right">Ticket Medio</th>
+<th class="py-2.5 px-space-md rounded-r-lg">Estrategia Recomendada</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent">
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-secondary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary"></span> Champions (VIP)
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">270</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-secondary">27.0%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$183,410</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-secondary">40.6%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">12 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">6.1 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$679</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Fidelización continua, recompensas VIP y preventas.</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-primary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Clientes Leales
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">203</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-primary">20.3%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$98,720</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-primary">21.8%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">28 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">4.2 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$486</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Cross-sell de categorías de mayor margen.</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-secondary-fixed-dim flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim"></span> Clientes Potenciales
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">165</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-secondary-fixed-dim">16.5%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$59,840</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-secondary-fixed-dim">13.2%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">34 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">2.9 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$362</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Recomendar suscripciones o compras recurrentes.</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-primary-container flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> Nuevos Prometedores
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">131</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-primary-container">13.1%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$41,610</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-primary-container">9.2%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">9 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">1.4 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$317</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Onboarding asistido y voucher de segunda compra.</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-tertiary flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> En Riesgo de Abandono
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">122</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-tertiary">12.2%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$42,500</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-tertiary">9.4%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">76 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">3.7 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$348</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Campañas Win-back personalizadas y encuestas de satisfacción.</td>
+</tr>
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-3 px-space-md font-semibold text-error flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-error"></span> Hibernando / Perdidos
+            </td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">109</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-error">10.9%</td>
+<td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$25,368</td>
+<td class="py-3 px-space-md text-right font-code-sm text-code-sm text-error">5.6%</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">138 días</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">1.3 txs</td>
+<td class="py-3 px-space-md text-right text-on-surface-variant font-code-sm text-code-sm">$232</td>
+<td class="py-3 px-space-md text-on-surface-variant font-label-md text-label-md">Descuentos de liquidación agresivos o depuración de base.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- EXPLORATORY DATA & CUSTOMER INSPECTOR TABLE -->
+<div class="bg-surface-container rounded-xl p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">manage_accounts</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Explorador de Clientes &amp; Puntuación RFM</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Consulta a nivel fila con vector de clasificación (Recency, Frequency, Monetary) derivado.</p>
+</div>
+<!-- Table Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="relative">
+<input class="bg-surface-container-lowest text-on-surface placeholder:text-outline px-space-sm pl-8 py-2 rounded-lg font-label-md text-label-md w-64 focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="search-customer" placeholder="Buscar por Customer ID o Segmento..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-on-surface-variant text-[18px]">search</span>
+</div>
+<select class="bg-surface-container-lowest text-on-surface px-space-sm py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:ring-1 focus:ring-primary" id="filter-segment-dropdown">
+<option value="ALL">Todos los Segmentos</option>
+<option value="Champions">Champions (VIP)</option>
+<option value="Leales">Clientes Leales</option>
+<option value="Potenciales">Clientes Potenciales</option>
+<option value="Nuevos">Nuevos Prometedores</option>
+<option value="En Riesgo">En Riesgo</option>
+<option value="Perdidos">Hibernando / Perdidos</option>
+</select>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-colors" id="btn-export-customers-csv">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Exportar Segmentos CSV</span>
+</button>
+</div>
+</div>
+<!-- Data Grid -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-md text-body-md">
+<thead>
+<tr class="text-on-surface-variant font-code-sm text-code-sm uppercase bg-surface-container-lowest">
+<th class="py-2.5 px-space-md rounded-l-lg">Customer ID</th>
+<th class="py-2.5 px-space-md text-center">Score RFM</th>
+<th class="py-2.5 px-space-md text-center">R / F / M</th>
+<th class="py-2.5 px-space-md">Segmento Asignado</th>
+<th class="py-2.5 px-space-md text-right">Recencia (Días)</th>
+<th class="py-2.5 px-space-md text-right">Frecuencia (Órdenes)</th>
+<th class="py-2.5 px-space-md text-right">Total Facturado ($)</th>
+<th class="py-2.5 px-space-md text-center">Última Compra</th>
+<th class="py-2.5 px-space-md text-center rounded-r-lg">Acción</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-transparent" id="customer-table-body">
+<!-- Dynamically Rendered via JS -->
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Counter -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant font-label-md text-label-md">
+<div class="flex items-center gap-2">
+<span id="pagination-info">Mostrando 1 a 6 de 1,000 clientes</span>
+<span class="text-outline">|</span>
+<span class="font-code-sm text-code-sm text-secondary">Filtro activo: Ninguno</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface disabled:opacity-40" id="btn-page-prev">Anterior</button>
+<span class="px-3 py-1 bg-surface-container-high rounded text-on-surface font-code-sm text-code-sm">Página 1</span>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container-high text-on-surface" id="btn-page-next">Siguiente</button>
+</div>
+</div>
+</div>
+<!-- CUSTOMER MODAL / PROFILE DRAWER (HIDDEN BY DEFAULT) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-sm hidden flex items-center justify-center p-space-md" id="customer-modal">
+<div class="bg-surface-container-high w-full max-w-xl rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md relative">
+<button class="absolute top-4 right-4 text-on-surface-variant hover:text-on-surface" id="btn-close-modal">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center font-headline-md text-headline-md">
+<span class="material-symbols-outlined">person</span>
+</div>
+<div>
+<span class="font-headline-md text-headline-md text-on-surface" id="modal-cust-id">CUST-10492</span>
+<span class="ml-2 px-2 py-0.5 rounded font-code-sm text-code-sm bg-secondary-container/40 text-secondary" id="modal-cust-badge">Champions (VIP)</span>
+<div class="font-code-sm text-code-sm text-on-surface-variant">Cliente Registrado • Retail Analytics Studio</div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-space-xs bg-surface-container-lowest p-space-sm rounded-lg">
+<div class="text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Score R</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="modal-r">5 / 5</span>
+<span class="font-code-sm text-code-sm text-secondary block" id="modal-r-days">hace 8 días</span>
+</div>
+<div class="text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Score F</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="modal-f">5 / 5</span>
+<span class="font-code-sm text-code-sm text-primary block" id="modal-f-txs">8 compras</span>
+</div>
+<div class="text-center">
+<span class="font-code-sm text-code-sm text-on-surface-variant block">Score M</span>
+<span class="font-title-md text-title-md text-on-surface font-bold" id="modal-m">5 / 5</span>
+<span class="font-code-sm text-code-sm text-secondary block" id="modal-m-val">$2,140 USD</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<h5 class="font-title-md text-title-md text-on-surface">Historial Reciente de Transacciones</h5>
+<div class="bg-surface-container-lowest rounded-lg p-space-sm space-y-1 font-label-md text-label-md text-on-surface">
+<div class="flex items-center justify-between">
+<span>TX-9901 • Beauty Products (3 uds)</span>
+<span class="text-secondary font-code-sm text-code-sm">$450.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>TX-8412 • Electronics (1 ud)</span>
+<span class="text-on-surface font-code-sm text-code-sm">$890.00</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span>TX-7230 • Clothing &amp; Apparel (4 uds)</span>
+<span class="text-on-surface font-code-sm text-code-sm">$800.00</span>
+</div>
+</div>
+</div>
+<div class="flex justify-end gap-space-xs pt-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md" id="btn-close-modal-footer">Cerrar</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary hover:bg-primary-container text-on-primary font-label-md text-label-md">Disparar Email Marketing</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // CLIENT-SIDE RFM ENGINE STATE & DUMMY CORPUS
+  (function() {
+    const rawDemoClients = [
+      { id: "CUST-00102", r_score: 5, f_score: 5, m_score: 5, group: "555", segment: "Champions (VIP)", recency: 4, freq: 9, monetary: 2840, last_date: "2023-12-28", category: "Electronics" },
+      { id: "CUST-00184", r_score: 5, f_score: 4, m_score: 5, group: "545", segment: "Champions (VIP)", recency: 8, freq: 6, monetary: 1950, last_date: "2023-12-24", category: "Beauty" },
+      { id: "CUST-00219", r_score: 4, f_score: 5, m_score: 4, group: "454", segment: "Champions (VIP)", recency: 16, freq: 7, monetary: 1820, last_date: "2023-12-16", category: "Clothing" },
+      { id: "CUST-00341", r_score: 4, f_score: 4, m_score: 4, group: "444", segment: "Clientes Leales", recency: 22, freq: 5, monetary: 1340, last_date: "2023-12-10", category: "Electronics" },
+      { id: "CUST-00405", r_score: 3, f_score: 4, m_score: 4, group: "344", segment: "Clientes Leales", recency: 32, freq: 4, monetary: 1120, last_date: "2023-11-30", category: "Clothing" },
+      { id: "CUST-00512", r_score: 5, f_score: 1, m_score: 3, group: "513", segment: "Nuevos Prometedores", recency: 3, freq: 1, monetary: 380, last_date: "2023-12-29", category: "Beauty" },
+      { id: "CUST-00599", r_score: 4, f_score: 2, m_score: 3, group: "423", segment: "Nuevos Prometedores", recency: 14, freq: 2, monetary: 610, last_date: "2023-12-18", category: "Clothing" },
+      { id: "CUST-00620", r_score: 3, f_score: 3, m_score: 3, group: "333", segment: "Clientes Potenciales", recency: 38, freq: 3, monetary: 820, last_date: "2023-11-24", category: "Electronics" },
+      { id: "CUST-00711", r_score: 2, f_score: 4, m_score: 4, group: "244", segment: "En Riesgo", recency: 64, freq: 5, monetary: 1420, last_date: "2023-10-29", category: "Beauty" },
+      { id: "CUST-00829", r_score: 2, f_score: 3, m_score: 3, group: "233", segment: "En Riesgo", recency: 78, freq: 3, monetary: 890, last_date: "2023-10-15", category: "Clothing" },
+      { id: "CUST-00910", r_score: 1, f_score: 5, m_score: 5, group: "155", segment: "En Riesgo Crítico", recency: 125, freq: 8, monetary: 2450, last_date: "2023-08-29", category: "Electronics" },
+      { id: "CUST-00977", r_score: 1, f_score: 1, m_score: 1, group: "111", segment: "Hibernando / Perdidos", recency: 168, freq: 1, monetary: 110, last_date: "2023-07-17", category: "Clothing" }
+    ];
+
+    let currentClients = [...rawDemoClients];
+    let selectedFilterSegment = "ALL";
+
+    // DOM Elements
+    const tableBody = document.getElementById("customer-table-body");
+    const searchInput = document.getElementById("search-customer");
+    const segmentDropdown = document.getElementById("filter-segment-dropdown");
+    const codeDrawer = document.getElementById("code-drawer");
+    const btnToggleCode = document.getElementById("btn-toggle-code");
+    const btnCloseCode = document.getElementById("btn-close-code");
+    const btnCopyCode = document.getElementById("btn-copy-code");
+    const copyText = document.getElementById("copy-text");
+    const dropzone = document.getElementById("dropzone");
+    const fileInput = document.getElementById("file-input");
+    const btnLoadDemo = document.getElementById("btn-load-demo");
+    const btnRecompute = document.getElementById("btn-recompute");
+    const modal = document.getElementById("customer-modal");
+    const btnCloseModal = document.getElementById("btn-close-modal");
+    const btnCloseModalFooter = document.getElementById("btn-close-modal-footer");
+
+    // Modal elements
+    const modalCustId = document.getElementById("modal-cust-id");
+    const modalBadge = document.getElementById("modal-cust-badge");
+    const modalR = document.getElementById("modal-r");
+    const modalRDays = document.getElementById("modal-r-days");
+    const modalF = document.getElementById("modal-f");
+    const modalFTxs = document.getElementById("modal-f-txs");
+    const modalM = document.getElementById("modal-m");
+    const modalMVal = document.getElementById("modal-m-val");
+
+    // Strategy Panel
+    const targetSegmentName = document.getElementById("target-segment-name");
+    const targetSegmentDesc = document.getElementById("target-segment-desc");
+    const targetRfmChip = document.getElementById("target-rfm-chip");
+    const targetCellCount = document.getElementById("target-cell-count");
+    const targetCellPct = document.getElementById("target-cell-pct");
+    const targetCellRev = document.getElementById("target-cell-rev");
+    const targetActions = document.getElementById("target-segment-actions");
+
+    // Helpers
+    function getSegmentBadge(seg) {
+      if (seg.includes("Champions")) {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-secondary-container/30 text-secondary border-none">${seg}</span>`;
+      } else if (seg.includes("Leales")) {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-primary-container/30 text-primary border-none">${seg}</span>`;
+      } else if (seg.includes("Nuevos")) {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-primary/20 text-on-surface border-none">${seg}</span>`;
+      } else if (seg.includes("Potenciales")) {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-secondary-fixed-dim/20 text-secondary-fixed-dim border-none">${seg}</span>`;
+      } else if (seg.includes("Riesgo")) {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-tertiary-container/30 text-tertiary border-none">${seg}</span>`;
+      } else {
+        return `<span class="px-2 py-0.5 rounded font-code-sm text-code-sm bg-error-container/30 text-error border-none">${seg}</span>`;
+      }
+    }
+
+    function renderTable(data) {
+      tableBody.innerHTML = "";
+      if (data.length === 0) {
+        tableBody.innerHTML = `<tr><td colspan="9" class="text-center py-8 text-on-surface-variant font-label-md">No se encontraron clientes que coincidan con la búsqueda.</td></tr>`;
+        return;
+      }
+
+      data.forEach(client => {
+        const row = document.createElement("tr");
+        row.className = "hover:bg-surface-container-high transition-colors";
+        row.innerHTML = `
+          <td class="py-3 px-space-md font-code-sm text-code-sm text-on-surface font-semibold">${client.id}</td>
+          <td class="py-3 px-space-md text-center font-code-sm text-code-sm text-primary font-bold bg-surface-container-lowest/50 rounded">${client.group}</td>
+          <td class="py-3 px-space-md text-center font-code-sm text-code-sm text-on-surface-variant">${client.r_score} / ${client.f_score} / ${client.m_score}</td>
+          <td class="py-3 px-space-md">${getSegmentBadge(client.segment)}</td>
+          <td class="py-3 px-space-md text-right font-code-sm text-code-sm text-on-surface">${client.recency} d</td>
+          <td class="py-3 px-space-md text-right font-code-sm text-code-sm text-on-surface">${client.freq} txs</td>
+          <td class="py-3 px-space-md text-right font-title-md text-title-md text-on-surface font-semibold">$${client.monetary.toLocaleString()}</td>
+          <td class="py-3 px-space-md text-center font-code-sm text-code-sm text-on-surface-variant">${client.last_date}</td>
+          <td class="py-3 px-space-md text-center">
+            <button class="btn-inspect px-2 py-1 rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-label-md text-label-md transition-colors" data-id="${client.id}">
+              Ver Perfil
+            </button>
+          </td>
+        `;
+        tableBody.appendChild(row);
+      });
+
+      // Bind inspect buttons
+      document.querySelectorAll(".btn-inspect").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const custId = btn.getAttribute("data-id");
+          const cust = currentClients.find(c => c.id === custId);
+          if (cust) {
+            modalCustId.innerText = cust.id;
+            modalBadge.innerText = cust.segment;
+            modalR.innerText = cust.r_score + " / 5";
+            modalRDays.innerText = "hace " + cust.recency + " días";
+            modalF.innerText = cust.f_score + " / 5";
+            modalFTxs.innerText = cust.freq + " compras";
+            modalM.innerText = cust.m_score + " / 5";
+            modalMVal.innerText = "$" + cust.monetary.toLocaleString() + " USD";
+            modal.classList.remove("hidden");
+          }
+        });
+      });
+    }
+
+    function filterData() {
+      const q = searchInput.value.toLowerCase().trim();
+      const seg = segmentDropdown.value;
+
+      const filtered = currentClients.filter(c => {
+        const matchesQuery = c.id.toLowerCase().includes(q) || c.segment.toLowerCase().includes(q);
+        const matchesSegment = seg === "ALL" || c.segment.includes(seg);
+        return matchesQuery && matchesSegment;
+      });
+
+      renderTable(filtered);
+    }
+
+    // Matrix Cell Interactions
+    const segmentStrategies = {
+      "Champions (VIP)": {
+        desc: "Clientes del percentil superior. Compran frecuentemente, con carritos elevados y gran fidelidad a la marca.",
+        actions: [
+          "Programa VIP con atención prioritaria y soporte de conserje.",
+          "Preventa de colecciones exclusivas antes de abrir a masa.",
+          "Fomentar advocacy mediante programas de referidos recompensados."
+        ]
+      },
+      "Leales Frecuentes": {
+        desc: "Base recurrente de alto valor. Mantienen actividad consistente durante el último trimestre.",
+        actions: [
+          "Recomendaciones personalizadas basadas en categoría previa.",
+          "Campañas de up-selling con bundles de productos.",
+          "Incentivos escalonados por volumen de compra mensual."
+        ]
+      },
+      "Clientes Potenciales": {
+        desc: "Clientes con frecuencia media y ticket moderado que muestran señales de aceleración.",
+        actions: [
+          "Ofrecer membresía o suscripción anual para elevar ticket.",
+          "Descuentos de fidelización para su 4ta transacción.",
+          "Encuestas de satisfacción para remover fricciones en checkout."
+        ]
+      },
+      "Nuevos Clientes": {
+        desc: "Compradores recientes con una o dos compras de exploración.",
+        actions: [
+          "Secuencia de emails de bienvenida y unboxing.",
+          "Cupón con vencimiento a 14 días para la 2da compra.",
+          "Sugerencias de catálogo de complementos (accesorios)."
+        ]
+      },
+      "En Riesgo": {
+        desc: "Solían comprar con regularidad pero no han interactuado en más de 60-90 días.",
+        actions: [
+          "Campañas Win-back agresivas con 'Te extrañamos'.",
+          "Descuento temporal exclusivo por tiempo limitado.",
+          "Retargeting dinámico en canales de pago (Meta / Google Ads)."
+        ]
+      },
+      "En Riesgo Crítico": {
+        desc: "Grandes compradores históricos que se encuentran en el umbral de churn definitivo.",
+        actions: [
+          "Llamada directa o contacto personalizado de customer success.",
+          "Auditoría de tickets de soporte para descartar mala experiencia.",
+          "Oferta de reactivación personalizada de máxima agresividad."
+        ]
+      },
+      "Hibernando": {
+        desc: "Baja frecuencia y largo período de inactividad. Bajo interés detectado.",
+        actions: [
+          "Campañas de reactivación de bajo costo (email / push).",
+          "Sondeo de interés en nuevas líneas de producto.",
+          "Si no responden en 60 días adicionales, depurar de CRM."
+        ]
+      },
+      "Perdidos / Churn": {
+        desc: "Compraron una sola vez hace más de 120 días y no mostraron retorno.",
+        actions: [
+          "Promociones de liquidación de temporada.",
+          "Depuración de base de datos para optimizar costes de envío.",
+          "Encuesta post-mortem de abandono."
+        ]
+      }
+    };
+
+    document.querySelectorAll(".matrix-cell").forEach(cell => {
+      cell.addEventListener("click", () => {
+        const r = cell.getAttribute("data-r");
+        const f = cell.getAttribute("data-f");
+        const seg = cell.getAttribute("data-segment");
+        const count = cell.querySelector(".cell-value").innerText;
+        const sub = cell.querySelector(".cell-sub").innerText;
+
+        targetRfmChip.innerText = `CELDA: R${r}-F${f}`;
+        targetSegmentName.innerText = seg;
+        targetCellCount.innerText = count + " Clientes";
+        targetCellPct.innerText = ((parseInt(count, 10) / 1000) * 100).toFixed(1) + "%";
+        targetCellRev.innerText = sub.replace("k", ",000").replace("$", "$ ");
+
+        const strat = segmentStrategies[seg] || segmentStrategies["Champions (VIP)"];
+        targetSegmentDesc.innerText = strat.desc;
+        targetActions.innerHTML = strat.actions.map(a => `<li class="flex items-start gap-1.5"><span class="text-secondary">•</span> ${a}</li>`).join("");
+
+        // Highlight selected in matrix
+        document.querySelectorAll(".matrix-cell").forEach(c => c.classList.remove("ring-2", "ring-primary", "scale-[1.02]"));
+        cell.classList.add("ring-2", "ring-primary", "scale-[1.02]");
+
+        // Filter table automatically
+        searchInput.value = seg.split(" ")[0];
+        filterData();
+      });
+    });
+
+    // View mode switch (count vs revenue)
+    const btnModeCount = document.getElementById("view-mode-count");
+    const btnModeRev = document.getElementById("view-mode-revenue");
+
+    btnModeCount.addEventListener("click", () => {
+      btnModeCount.classList.add("bg-surface-container-high", "text-secondary");
+      btnModeCount.classList.remove("text-on-surface-variant");
+      btnModeRev.classList.remove("bg-surface-container-high", "text-secondary");
+      btnModeRev.classList.add("text-on-surface-variant");
+    });
+
+    btnModeRev.addEventListener("click", () => {
+      btnModeRev.classList.add("bg-surface-container-high", "text-secondary");
+      btnModeRev.classList.remove("text-on-surface-variant");
+      btnModeCount.classList.remove("bg-surface-container-high", "text-secondary");
+      btnModeCount.classList.add("text-on-surface-variant");
+    });
+
+    // Code Drawer
+    btnToggleCode.addEventListener("click", () => {
+      codeDrawer.classList.toggle("hidden");
+    });
+    btnCloseCode.addEventListener("click", () => {
+      codeDrawer.classList.add("hidden");
+    });
+    btnCopyCode.addEventListener("click", () => {
+      const code = document.getElementById("python-snippet").innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        copyText.innerText = "¡Copiado!";
+        setTimeout(() => { copyText.innerText = "Copiar Código"; }, 2000);
+      });
+    });
+
+    // Modals
+    btnCloseModal.addEventListener("click", () => modal.classList.add("hidden"));
+    btnCloseModalFooter.addEventListener("click", () => modal.classList.add("hidden"));
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.add("hidden");
+    });
+
+    // File upload triggers
+    dropzone.addEventListener("click", () => fileInput.click());
+    fileInput.addEventListener("change", (e) => {
+      if (e.target.files && e.target.files[0]) {
+        const file = e.target.files[0];
+        alert(`Archivo "${file.name}" cargado exitosamente. Recalculando scores RFM...`);
+        triggerRecalculate();
+      }
+    });
+
+    btnLoadDemo.addEventListener("click", () => {
+      alert("Dataset demo 'retail_sales_dataset.csv' cargado con 1,000 registros sintéticos verificados.");
+      triggerRecalculate();
+    });
+
+    function triggerRecalculate() {
+      btnRecompute.innerHTML = `<span class="material-symbols-outlined text-[16px] animate-spin">sync</span> Procesando...`;
+      setTimeout(() => {
+        btnRecompute.innerHTML = `<span class="material-symbols-outlined text-[16px]">refresh</span> Recalcular`;
+        renderTable(currentClients);
+      }, 500);
+    }
+
+    btnRecompute.addEventListener("click", triggerRecalculate);
+
+    // Filter Listeners
+    searchInput.addEventListener("input", filterData);
+    segmentDropdown.addEventListener("change", filterData);
+
+    document.getElementById("btn-filter-table").addEventListener("click", () => {
+      const segName = targetSegmentName.innerText.split(" ")[0];
+      searchInput.value = segName;
+      filterData();
+      searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+
+    // Export CSV Mock
+    document.getElementById("btn-export-customers-csv").addEventListener("click", () => {
+      const csvHeader = "data:text/csv;charset=utf-8,CustomerID,R_Score,F_Score,M_Score,RFM_Group,Segment,Recency,Frequency,Monetary\n";
+      const csvRows = currentClients.map(c => `${c.id},${c.r_score},${c.f_score},${c.m_score},${c.group},"${c.segment}",${c.recency},${c.freq},${c.monetary}`).join("\n");
+      const encodedUri = encodeURI(csvHeader + csvRows);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "rfm_segmented_customers.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    });
+
+    document.getElementById("btn-export-cohorts").addEventListener("click", () => {
+      alert("Descargando resumen agregado de cohortes RFM en formato CSV...");
+    });
+
+    // Initial render
+    renderTable(currentClients);
+  })();
+</script></main></div></body></html>
